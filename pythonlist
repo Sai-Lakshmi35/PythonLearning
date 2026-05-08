@@ -1,0 +1,123 @@
+Python Lists Cheat Sheet - Complete Notes
+This document extracts all list-related information from the Python Summary Cheat Sheet - 2 page, including Working with Lists topics and List Methods. It also adds one simple example for each list method for easier practice. [page:9]
+List Basics
+A list is described as the most versatile Python data structure and it holds an ordered sequence of items. Elements of a list are accessed using indexing. [page:9]
+list_a = [5, "Six", 2, 8.2]
+print(list_a[1])
+# Output: Six
+Iterating Over a List
+A for loop can be used to iterate over each item in a list. The cheat sheet shows printing each item one by one. [page:9]
+list_a = [5, "Six", 8.2]
+for item in list_a:
+    print(item)
+# Output:
+# 5
+# Six
+# 8.2
+List Concatenation
+The + operator concatenates lists, similar to string concatenation. [page:9]
+list_a = [1, 2]
+list_b = ["a", "b"]
+list_c = list_a + list_b
+print(list_c)
+# Output: [1, 2, "a", "b"]
+List Slicing
+Obtaining a part of a list is called list slicing. Extended slicing can use a step value to extract alternate items. [page:9]
+list_a = [5, "Six", 2]
+list_b = list_a[:2]
+print(list_b)
+# Output: [5, "Six"]
+list_a = ["R", "B", "G", "O", "W"]
+list_b = list_a[0:5:3]
+print(list_b)
+# Output: ["R", "O"]
+Reversing and Negative Slicing
+Using -1 as the step reverses the order of items in a list. The cheat sheet also shows slicing with negative indices and negative step size. [page:9]
+list_a = [5, 4, 3, 2, 1]
+print(list_a[::-1])
+# Output: [1, 2, 3, 4, 5]
+list_a = [5, 4, 3, 2, 1]
+print(list_a[-3:-1])
+# Output: [3, 2]
+list_a = [5, 4, 3, 2, 1]
+print(list_a[4:2:-1])
+# Output: [1, 2]
+Membership Operators
+The in operator checks whether a value is present in a sequence, and not in checks whether a value is absent. [page:9]
+numbers = [1, 2, 3]
+print(2 in numbers)
+print(5 not in numbers)
+# Output:
+# True
+# True
+Nested Lists
+A list can be an item inside another list. The cheat sheet also shows how to access the nested list and an item inside that nested list. [page:9]
+list_a = [5, "Six", [8, 6], 8.2]
+print(list_a[2])
+# Output: [8, 6]
+list_a = [5, "Six", [8, 6], 8.2]
+print(list_a[2][0])
+# Output: 8
+List Methods
+The cheat sheet lists ten list methods: append, extend, insert, pop, remove, clear, index, count, sort, and copy. Their uses are shown below with one extra practice example for each method. [page:9]
+append()
+append() adds an element to the end of the list. [page:9]
+fruits = ["apple", "banana"]
+fruits.append("mango")
+print(fruits)
+# Output: ["apple", "banana", "mango"]
+extend()
+extend() adds all the elements of a sequence to the end of the list. [page:9]
+a = [1, 2]
+b = [3, 4]
+a.extend(b)
+print(a)
+# Output: [1, 2, 3, 4]
+insert()
+insert() inserts an element at a specified index. [page:9]
+colors = ["red", "blue"]
+colors.insert(1, "green")
+print(colors)
+# Output: ["red", "green", "blue"]
+pop()
+pop() removes the last element from the list. [page:9]
+nums = [10, 20, 30]
+nums.pop()
+print(nums)
+# Output: [10, 20]
+remove()
+remove() deletes the first matching element from the list. [page:9]
+nums = [1, 2, 3, 2]
+nums.remove(2)
+print(nums)
+# Output: [1, 3, 2]
+clear()
+clear() removes all items from the list. [page:9]
+items = ["pen", "book"]
+items.clear()
+print(items)
+# Output: []
+index()
+index() returns the index of the first occurrence of the specified value. [page:9]
+letters = ["a", "b", "c", "b"]
+print(letters.index("b"))
+# Output: 1
+count()
+count() returns the number of elements with the specified value. [page:9]
+nums = [1, 2, 2, 3, 2]
+print(nums.count(2))
+# Output: 3
+sort()
+sort() sorts the list. [page:9]
+nums = [4, 1, 3, 2]
+nums.sort()
+print(nums)
+# Output: [1, 2, 3, 4]
+copy()
+copy() returns a new list and does not modify the original list. [page:9]
+a = [1, 2, 3]
+b = a.copy()
+print(b)
+# Output: [1, 2, 3]
+Quick Review
+This page covers list access, iteration, concatenation, slicing, reversing, membership checks, nested lists, and list methods. The added practice examples make each method easier to understand and revise quickly. [page:9]
